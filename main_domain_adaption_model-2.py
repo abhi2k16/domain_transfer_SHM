@@ -1056,10 +1056,10 @@ for i in range(6):
 plt.show()
 #%% test with experimetal data
 fig, ax = plt.subplots(1,3, figsize=(9,3))
-ax[0].hist(stack_clf.predict(EXP_050_265[0:63,:]),range=(1,7))
+ax[0].hist(stack_clf.predict(EXP_050_265[0:50,:]),range=(1,7))
 ax[0].set(xlabel='Size Group', ylabel='Count')
-ax[1].hist(stack_clf.predict(EXP_100_265[0:51,:]),range=(1,7))
+ax[1].hist(stack_clf.predict(EXP_100_265[0:50,:]),range=(1,7))
 ax[1].set(xlabel='Size Group')
-ax[2].hist(stack_clf.predict(EXP_070_385[50:100,:]),range=(1,7))
+ax[2].hist(stack_clf.predict(EXP_070_385[0:50,:]),range=(1,7))
 ax[2].set(xlabel='Size Group')
 plt.show()
